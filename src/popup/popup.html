@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="partio-popup">
+    <div class="partio-popup-header">
+      <svg class="partio-popup-logo" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="28" height="28" rx="6" fill="#7B2D8E"/>
+        <g transform="translate(4, 3) scale(0.75)">
+          <ellipse cx="13.5" cy="12" rx="10" ry="9" fill="white"/>
+          <circle cx="10" cy="11" r="2.2" fill="#7B2D8E"/>
+          <circle cx="17" cy="11" r="2.2" fill="#7B2D8E"/>
+          <path d="M10 4 C10 1, 7 0, 5 2" stroke="white" stroke-width="2" fill="none" stroke-linecap="round"/>
+          <path d="M17 4 C17 1, 20 0, 22 2" stroke="white" stroke-width="2" fill="none" stroke-linecap="round"/>
+          <ellipse cx="13.5" cy="15" rx="2" ry="1.2" fill="#7B2D8E" opacity="0.4"/>
+        </g>
+      </svg>
+      <span class="partio-popup-title">Partio</span>
+    </div>
+
+    <div id="loading">
+      <div class="partio-loading">Checking connection...</div>
+    </div>
+
+    <div id="connected" hidden>
+      <div class="partio-status-box partio-status-box-success">
+        Connected as <strong id="username"></strong>
+      </div>
+      <button id="disconnect-btn" class="partio-btn partio-btn-secondary">Disconnect</button>
+    </div>
+
+    <div id="not-connected" hidden>
+      <div class="partio-status-box">
+        Sign in to Partio to use this extension.
+      </div>
+      <button id="connect-btn" class="partio-btn partio-btn-primary">Connect</button>
+    </div>
+  </div>
+  <script type="module" src="popup.ts"></script>
+</body>
+</html>
