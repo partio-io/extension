@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "Partio",
+  "version": "0.1.0",
+  "description": "See AI agent plans and session transcripts directly on GitHub commit pages.",
+  "permissions": ["storage", "activeTab", "cookies"],
+  "host_permissions": ["https://github.com/*", "https://api.github.com/*", "https://app.partio.io/*"],
+  "background": {
+    "service_worker": "src/background/service-worker.ts"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/*"],
+      "js": ["src/content/main.ts"],
+      "css": ["src/content.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_popup": "src/popup/popup.html",
+    "default_icon": {
+      "16": "icons/icon-16.png",
+      "48": "icons/icon-48.png",
+      "128": "icons/icon-128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon-16.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  }
+}
