@@ -10,6 +10,22 @@ When browsing a GitHub repository that uses Partio, the extension reads checkpoi
 - **Plans** — view Partio plans associated with branches and PRs
 - **Session transcripts** — expand inline to read the full AI conversation that produced a code change
 
+### Checkpoint Panel
+
+![Checkpoint panel expanding on a GitHub commit page](https://raw.githubusercontent.com/partio-io/docs/main/images/extension/panel-expanding.gif)
+
+### Transcript & Plan Tabs
+
+![Switching between Transcript and Plan tabs](https://raw.githubusercontent.com/partio-io/docs/main/images/extension/transcript-plan-tabs.gif)
+
+### Commit Badges
+
+![Purple Partio badges on a GitHub commit list](https://raw.githubusercontent.com/partio-io/docs/main/images/extension/commit-badges.gif)
+
+### Popup Auth
+
+![Extension popup showing connect and disconnect states](https://raw.githubusercontent.com/partio-io/docs/main/images/extension/popup-auth.gif)
+
 ## Tech Stack
 
 - Chrome Extension Manifest V3
